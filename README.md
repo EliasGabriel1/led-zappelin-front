@@ -1,71 +1,50 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# led-zappelin-front" 
+<div class="markdown prose w-full break-words dark:prose-invert dark">
+    <h1>ChatApp</h1>
+    <p>Este é um componente React que implementa uma aplicação de chat em tempo real utilizando o Socket.IO. Ele possui
+        um estado local (useState) para armazenar as mensagens que são enviadas e recebidas. O socket.io-client é
+        importado e conectado a um servidor na porta 4000, com o qual o componente irá se comunicar.</p>
+    <h2>Funcionalidades</h2>
+    <ul>
+        <li>O componente ChatApp permite que os usuários enviem e recebam mensagens em tempo real através do Socket.IO.
+        </li>
+        <li>As mensagens são armazenadas em um estado local e exibidas no componente.</li>
+        <li>A cor de fundo da mensagem é alternada entre rosa e branco a cada vez que um novo remetente envia uma
+            mensagem. Se a mensagem atual tiver o mesmo remetente da mensagem anterior, a cor de fundo não é alterada.
+        </li>
+    </ul>
+    <h2>Como usar</h2>
+    <ol>
+        <li>Clone o repositório para o seu computador.</li>
+        <li>Abra o terminal na pasta raiz do projeto e instale as dependências com o comando <code>npm install</code>.
+        </li>
+        <li>Inicie o servidor com o comando <code>npm run server</code>.</li>
+        <li>Abra outro terminal na mesma pasta e inicie o cliente com o comando <code>npm start</code>.</li>
+        <li>Abra o navegador e acesse <code>http://localhost:3000</code>.</li>
+    </ol>
+    <h2>API</h2>
+    <h3>Funções</h3>
+    <ul>
+        <li><code>handleSubmit(event)</code>: é chamada quando o usuário clica no botão "Enviar" no formulário de
+            entrada de mensagens. Ela envia uma mensagem para o servidor via socket.io com a mensagem digitada pelo
+            usuário e, em seguida, limpa o estado local da mensagem.</li>
+    </ul>
+    <h3>Estado</h3>
+    <ul>
+        <li><code>message</code>: estado local que armazena a mensagem digitada pelo usuário.</li>
+        <li><code>messages</code>: estado local que armazena todas as mensagens recebidas.</li>
+    </ul>
+    <h3>Dependências</h3>
+    <ul>
+        <li>React</li>
+        <li>Socket.IO-client</li>
+    </ul>
+    <h2>Contribuição</h2>
+    <ol>
+        <li>Fork do repositório.</li>
+        <li>Crie um branch para a sua nova funcionalidade (<code>git checkout -b feature/nome-da-funcionalidade</code>).
+        </li>
+        <li>Comite as mudanças (<code>git commit -m 'Adiciona nova funcionalidade'</code>).</li>
+        <li>Envie para o seu fork (<code>git push origin feature/nome-da-funcionalidade</code>).</li>
+        <li>Abra um Pull Request.</li>
+    </ol>
+</div>
