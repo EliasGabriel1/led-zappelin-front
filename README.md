@@ -1,3 +1,4 @@
+
 <div class="markdown prose w-full break-words dark:prose-invert dark">
     <h1>ChatApp</h1>
     <p>Este é um componente React que implementa uma aplicação de chat em tempo real utilizando o Socket.IO. Ele possui
